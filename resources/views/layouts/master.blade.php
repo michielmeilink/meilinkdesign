@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="{{ URL::asset("/resources/assets/css/layout.css") }}">
 </head>
 <body>
+
     @include('layouts.nav')
+
+    <div class="master-bg">
+        <h1>Meilink Design</h1>
+    </div>
+
 </body>
 </html>
