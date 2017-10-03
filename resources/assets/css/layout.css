@@ -1,0 +1,37 @@
+body {
+    background-color: #0888AB;
+    color:#FFFFFF;
+}
+
+@font-face {
+    font-family: 'Patron Bold';
+    src: url('../fonts/patronweb-bold-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/patronweb-bold-webfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+.container {
+    max-width: 80rem;
+    display:inline-block;
+}
+
+/* Masthead for nav */
+.blog-masthead {
+    padding-top:2rem;
+    background-color:transparent;
+    font-size:18px;
+    text-align: center;
+    font-family:"Patron Bold";
+}
+
+/* Nav-links */
+.nav-link {
+    margin-left:5rem;
+    margin-right:5rem;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color:#FFFFFF;
+}
