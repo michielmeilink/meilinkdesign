@@ -1,5 +1,4 @@
 body, div {
-    /*background-color: #0888AB;*/
     color:#FFFFFF;
     margin: 0;
     border: 0 none;
@@ -12,37 +11,37 @@ body, div {
     url('../fonts/patronweb-bold-webfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1  {
     font-family: "Patron Bold";
     font-weight: normal;
     color: #FFFFFF;
 }
 
-/* Masthead for nav */
-.masthead {
+h2 {
+    font-family:Ubuntu;
+    font-weight:700;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+/* Nav */
+.nav-container {
     font-size:18px;
     text-align: center;
     font-family:"Patron Bold";
     left: 0;
     width: 100%;
     height: 6vh;
-    padding-top:3rem;
+    padding-top:30px;
     position: absolute;
     z-index: 10;
 }
 
-/* Container inside the Masthead */
-.container {
+.nav {
     max-width: 80rem;
     display:inline-block;
 }
 
-/* Nav-links */
 .nav-link {
     margin-left:5rem;
     margin-right:5rem;
@@ -56,24 +55,95 @@ h6, .h6 {
 }
 
 /* Image on the master page */
-.master-bg {
+.hero {
     font-family:"Patron Bold";
     background: url("../../background.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 85vh;
+    height:600px;
+    width:100%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
 
 /* Text on the image */
-h1 {
+.hero-title {
     vertical-align: middle;
-    line-height: 60vh;
+    line-height: 50vh;
     text-transform: uppercase;
     text-align: center;
-    font-size:92px;
+    font-size:82px;
 }
+
+/* The three div's on the master page */
+.features {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content:center;
+    margin-top:-180px;
+}
+
+.features-group{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.features-item {
+    background-color: #0888AB;
+    width: 250px;
+    height:250px;
+    margin:30px;
+    padding:15px;
+    display:inline-block;
+    -webkit-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.26);
+}
+
+.text {
+    padding-top:160px;
+    font-size:18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Portfolio */
+.portfolio {
+    font-family:Ubuntu;
+    font-size:14px;
+    line-height:24px;
+    background-color: #0888AB;
+    margin-top:40px;
+    width:100%;
+}
+
+.portfolio-group {
+    list-style-type: none;
+    display: flex; /* portfolio-group-left and portfolio-group-right next to each other horizontally */
+    height:250px;
+    width:970px;
+    margin:0 auto;
+}
+
+.portfolio-group-left {
+    display: flex; /* Text vertical middle */
+    justify-content: center; /* Text vertical middle */
+    flex-direction: column; /* Text vertical middle */
+    width:240px;
+}
+
+.portfolio-group-right {
+    display: flex; /* Text vertical middle */
+    justify-content: center; /* Text vertical middle */
+    flex-direction: column; /* Text vertical middle */
+    width:400px;
+    flex:1;
+}
+
+.portfolio-text {
+    font-weight:300;
+}
+
