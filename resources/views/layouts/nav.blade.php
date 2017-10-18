@@ -9,5 +9,3 @@
         <a class="nav-link" href="#">Contact</a>
     </nav>
 </div>
-
-
